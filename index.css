@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 208, 0);
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.wrapper {
+  width: 60vmin;
+  height: 60vmin;
+  background-color: black;
+  transform: translate(-50% -50%);
+  text-align: center;
+}
+span {
+  font-size: 3em;
+  background-color: transparent;
+  position: relative;
+  top: 0.8em;
+  opacity: 0;
+}
+p {
+  background-color: transparent;
+  color: white;
+  position: relative;
+  top: 20%;
+  height: 2.5em;
+  padding: 0 1em;
+  opacity: 0;
+}
+.fade {
+  opacity: 1;
+  transition: 0.5s;
+}
+#btn {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 1em;
+  position: relative;
+  top: 40%;
+}
+@media (max-width: 435px) {
+  .wrapper {
+    height: 50vh;
+  }
+}
